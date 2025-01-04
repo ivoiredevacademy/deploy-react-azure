@@ -1,34 +1,26 @@
-import { useState } from 'react'
+
 import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './App.css'
+import CoderIcon from './assets/CoderIcon'
+import azureImg from './assets/azure.png'
 
 function App() {
-  const [count, setCount] = useState(0)
 
   return (
-    <>
+    <div className="container mx-auto flex items-start">
       <div>
-        <a href="https://vitejs.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
+        <img src={azureImg} className="w-20" alt="Azure logo" />
+        <h1 className="text-6xl font-semibold">Deployed in Azure</h1>
+        <p className="text-gray-500 text-lg">A react project deployed on Microsoft Azure, leveraging cloud-native technologies using <strong>VS Code</strong>.</p>
+        <div className="flex justify-center ">
+          <CoderIcon />
+        </div>
+      </div>
+      <div className='flex justify-center w-1/2'>
         <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
+          <img src={reactLogo} className="w-80" alt="React logo" />
         </a>
       </div>
-      <h1>Deployed from github actions</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.jsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
-    </>
+    </div>
   )
 }
 
