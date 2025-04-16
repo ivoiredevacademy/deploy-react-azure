@@ -10,7 +10,7 @@ function App() {
       <div>
         <img src={azureImg} className="w-20" alt="Azure logo" />
         <h1 className="text-6xl font-semibold">Deployed in Microsoft Azure</h1>
-        <p className="text-gray-500 text-lg">A react project deployed on Microsoft Azure, leveraging cloud-native technologies using <strong>VS Code</strong>.</p>
+        <p className="text-gray-500 text-lg">A react project deployed on Microsoft Azure, leveraging cloud-native technologies using <strong>Azure DevOps</strong>.</p>
         <div className="flex justify-center ">
           <CoderIcon />
         </div>
